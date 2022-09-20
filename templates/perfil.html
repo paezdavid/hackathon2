@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,15 +7,107 @@
     <title>Perfil</title>
 </head>
 <body>
-    
-    <!-- <table>
-        <tr>
-            <td></td>
-        </tr>
-    </table> -->
 
-    {{ fila }}
+    <p>{{ fila }}</p>
+
+
+    
+    <iframe
+        width="600"
+        height="450"
+        style="border:0"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCAdCXMXHkxwXSJ-S-Dp23IwMmBxaPZHUQ&q={{fila['LATITUD'][0]}},{{fila['LONGITUD'][0]}}">
+    </iframe>
+
+    <script>
+
+        
+
+    </script>
 
 
 </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  
+  <body>
+
+    <header>
+        <div class="navbar bg-stone-200">
+          <div class="flex-1">
+            <img class="h-16 ml-5" src="/static/logo.png" alt="Logo de Artesanos" />
+          </div>
+          <!-- <div class="flex-none">
+            <ul class="menu menu-horizontal p-0">
+              <li><a>Inicio</a></li>
+              <li><a>Mapa</a></li>
+            </ul>
+          </div> -->
+        </div>
+      </header>
+      
+    <iframe
+        width="600"
+        height="450"
+        style="border:0"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCAdCXMXHkxwXSJ-S-Dp23IwMmBxaPZHUQ&q={{fila['LATITUD'][0]}},{{fila['LONGITUD'][0]}}">
+    </iframe>
+
+
+
+    <div class="pl-0 mb-10 flex justify-center">
+      <!--Tarjeta/Perfil del Artista-->
+      <div class="flex flex-row max-w-sm rounded overflow-hidden shadow-lg">
+        <img
+          src="/static/carpincho_02.jpg"
+          alt="artesano"
+          height="150"
+          width="150"
+          class="px-4 py-4"
+        />
+        <div class="px-4 py-4">
+          <div class="font-bold text-xs mb-1">{{ fila["NOMBRE"][0] }} {{ fila["APELLIDO"][0] }}</div>
+          <p class="text-gray-700 text-xs">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Voluptatibus quia, nulla! Maiores et perferendis eaque,
+            exercitationem praesentium nihil.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--Fotos de las artesanias-->
+    <div class="flex space-x-4 gap-1">
+      <div class="max-w-sm rounded overflow-hidden shadow-lg">
+        <img
+          class="w-24 h-24"
+          src="/static/carpincho.jpg"
+          alt="artesania"
+        />
+      </div>
+      <div class="max-w-sm rounded overflow-hidden shadow-lg">
+        <img class="w-24 h-24" src="/static/carpincho.jpg" alt="artesania" />
+      </div>
+      <div class="max-w-sm rounded overflow-hidden shadow-lg">
+        <img class="w-24 h-24" src="/static/carpincho.jpg" alt="artesano" />
+      </div>
+      <div class="max-w-sm rounded overflow-hidden shadow-lg">
+        <img class="w-24 h-24" src="/static/carpincho.jpg" alt="artesania" />
+      </div>
+    </div>
+  </body>
 </html>
