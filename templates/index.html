@@ -47,22 +47,27 @@
                       <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">Nombre</th>
                       <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Apellido</th>
                       <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Modalidad</th>
+                      <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Lat</th>
+                      <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Lon</th>
                       <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Direccion</th>
+                      <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Registro</th>
                       
                     </tr>
                   </thead>
 
                   <tbody class="divide-y divide-gray-200 bg-white">
                     <!-- FILA -->
-                    {% for i in range(tabla_final.keys()|length) %}
+                    {% for i in range(tabla_final["NOMBRE"]|length) %}
                         <tr>
                             {% for columna in tabla_final.values() %} 
                                 <!-- <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">Lindsay Walton</td> -->
                                 <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ columna[i] }}</td>
+                                
                             {% endfor %}
                             <td>
-                                <button>Mostrar en mapa</button>
+                               <a href="" class="perfil-link">Ver perfil</a>
                             </td>
+                            
                         </tr>
                     {% endfor %}
 
@@ -73,6 +78,21 @@
           </div>
         </div>
     </div>
+
+    <script>
+      // Seleccionar todos los botones de cambio de ruta
+      let links = document.querySelectorAll('.perfil-link');
+      // console.log(links)
+
+      // Iterar sobre el array de botones
+      links.forEach(e => {
+        // Extraer el valor de la celda de registro (ID)
+        let id = e.parentElement.parentElement.children[6].textContent;
+        // En la ruta URL declarar el href con el nuevo ID
+        e.setAttribute('href', `/perfiles/${id}`)
+      })
+      
+    </script>
 
   
     <!-- <iframe
@@ -105,8 +125,12 @@
         //     item.addEventListener("click", (e) => {
         //         // console.log(e.target.parentNode.parentNode.children[3].textContent)
         //         // let direccion = e.target.parentNode.parentNode.children[3].textContent
+        //         let coords = e.target.parentNode.parentNode.children
+        //         console.log(coords)
+        //         let lat = e.target.parentNode.parentNode.children[3].textContent
+        //         let lon = e.target.parentNode.parentNode.children[4].textContent
         //         // let url = `https://www.google.com/maps/embed/v1/place?key=AIzaSyCAdCXMXHkxwXSJ-S-Dp23IwMmBxaPZHUQ&q=${direccion},PY`
-        //         let url = `https://www.google.com/maps/embed/v1/place?key=AIzaSyCAdCXMXHkxwXSJ-S-Dp23IwMmBxaPZHUQ&q=-25.278246+-57.177720`
+        //         let url = `https://www.google.com/maps/embed/v1/place?key=AIzaSyCAdCXMXHkxwXSJ-S-Dp23IwMmBxaPZHUQ&q=${lat}+${lon}`
 
                 
 
@@ -153,65 +177,65 @@
         //   // new MarkerClusterer({ markers, map });
         // }
 
-        // const locations = [
-        //   { lat: -25.218241, lng: -57.417544 },
-        //   { lat: -22.343947, lng: -60.054487 },
-        //   { lat: -25.278246, lng: -57.177720 },
-        //   { lat: -25.287430, lng: -57.666551 },
-        //   { lat: -25.083245, lng: -57.526387 },
-        //   { lat: -25.690741, lng: -56.469095 }
-        // ];
+        const locations = [
+          { lat: -25.218241, lng: -57.417544 },
+          { lat: -22.343947, lng: -60.054487 },
+          { lat: -25.278246, lng: -57.177720 },
+          { lat: -25.287430, lng: -57.666551 },
+          { lat: -25.083245, lng: -57.526387 },
+          { lat: -25.690741, lng: -56.469095 }
+        ];
 
         // #########################################
 
         // FUNCIÓN PARA REVERSE GEOCODING (de coordenada a dirección normal)
-        function initMap() {
-          const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 8,
-            center: { lat: 40.731, lng: -73.997 },
-          });
-          const geocoder = new google.maps.Geocoder();
-          const infowindow = new google.maps.InfoWindow();
+        // function initMap() {
+        //   const map = new google.maps.Map(document.getElementById("map"), {
+        //     zoom: 8,
+        //     center: { lat: 40.731, lng: -73.997 },
+        //   });
+        //   const geocoder = new google.maps.Geocoder();
+        //   const infowindow = new google.maps.InfoWindow();
 
-          document.getElementById("submit").addEventListener("click", () => {
-            geocodeLatLng(geocoder, map, infowindow);
-          });
-        }
+        //   document.getElementById("submit").addEventListener("click", () => {
+        //     geocodeLatLng(geocoder, map, infowindow);
+        //   });
+        // }
 
-        function geocodeLatLng(geocoder, map, infowindow) {
-          const input = document.getElementById("latlng").value;
-          const latlngStr = input.split(",", 2);
-          const latlng = {
-            lat: parseFloat(latlngStr[0]),
-            lng: parseFloat(latlngStr[1]),
-          };
+        // function geocodeLatLng(geocoder, map, infowindow) {
+        //   const input = document.getElementById("latlng").value;
+        //   const latlngStr = input.split(",", 2);
+        //   const latlng = {
+        //     lat: parseFloat(latlngStr[0]),
+        //     lng: parseFloat(latlngStr[1]),
+        //   };
 
-          geocoder
-            .geocode({ location: latlng })
-            .then((response) => {
-              if (response.results[0]) {
-                map.setZoom(11);
+        //   geocoder
+        //     .geocode({ location: latlng })
+        //     .then((response) => {
+        //       if (response.results[0]) {
+        //         map.setZoom(11);
 
-                const marker = new google.maps.Marker({
-                  position: latlng,
-                  map: map,
-                });
+        //         const marker = new google.maps.Marker({
+        //           position: latlng,
+        //           map: map,
+        //         });
 
-                // En el mapa se nos redirige a la coordenada pero se muestra la dirección normal
-                infowindow.setContent(response.results[0].formatted_address);
-                infowindow.open(map, marker);
+        //         // En el mapa se nos redirige a la coordenada pero se muestra la dirección normal
+        //         infowindow.setContent(response.results[0].formatted_address);
+        //         infowindow.open(map, marker);
 
-                // Con estas coordenadas: -25.287430,-57.666551
-                // Esto muestra la direccion normal en la consola:
-                // console.log(response.results[0].formatted_address)
-                //    P86M+F7Q, Ruy Díaz de Guzmán, Asunción, Paraguay
+        //         // Con estas coordenadas: -25.287430,-57.666551
+        //         // Esto muestra la direccion normal en la consola:
+        //         // console.log(response.results[0].formatted_address)
+        //         //    P86M+F7Q, Ruy Díaz de Guzmán, Asunción, Paraguay
 
-              } else {
-                window.alert("No results found");
-              }
-            })
-            .catch((e) => window.alert("Geocoder failed due to: " + e));
-        }
+        //       } else {
+        //         window.alert("No results found");
+        //       }
+        //     })
+        //     .catch((e) => window.alert("Geocoder failed due to: " + e));
+        // }
 
 
 
@@ -238,15 +262,17 @@
         //   { lat: -43.999792, lng: 170.463352 },
         // ]
 
-        window.initMap = initMap;
+        // window.initMap = initMap;
+
+
 
 
 
     </script> 
 
-    <script
+    <!-- <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAdCXMXHkxwXSJ-S-Dp23IwMmBxaPZHUQ&callback=initMap&v=weekly"
       defer
-    ></script>
+    ></script> -->
 </body>
 </html>
