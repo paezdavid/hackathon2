@@ -20,6 +20,8 @@ El sistema GAPy permite conectar a los compradores con los artesanos logrando as
 - ### David Páez
 - ### Matheo Duarte
 - ### Elías Florentín
+- ### Nicolas Calicchio
+
 
 # Mentor
 - ### Santos Lima
