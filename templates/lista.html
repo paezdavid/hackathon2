@@ -12,193 +12,202 @@
     
 </head>
 <body>
-   
-  <button id="dropdownCheckboxButton" data-dropdown-toggle="dropdownDefaultCheckbox" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Departamento<svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
 
-<!-- Dropdown menu -->
-    <form action="/lista" method="post">
-        <div id="dropdownDefaultCheckbox" class="hidden z-10 w-48 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(0px, 2410px);">
-            <ul class="p-3 space-y-3 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownCheckboxButton">
-            <li>
-                <div class="flex items-center">
-                <input id="checkbox-item-1" type="checkbox" name="central" value="central" class="ola w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                <label for="checkbox-item-1" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">central</label>
-                </div>
-            </li>
-            <li>
-                <div class="flex items-center">
-                    <input checked="" id="checkbox-item-2" type="checkbox" value="asuncion" name="asuncion" class="ola w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                    <label for="checkbox-item-2" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Asunción</label>
-                </div>
-            </li>
-            <li>
-                <div class="flex items-center">
-                <input id="checkbox-item-3" type="checkbox" name="concepcion" value="concepcion" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Concepción</label>
-                </div>
-            </li>
-            <li>
-                <div class="flex items-center">
-                <input id="checkbox-item-3" type="checkbox" name="cordillera" value="cordillera" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Cordillera</label>
-                </div>
-            </li>
-            <li>
-                <div class="flex items-center">
-                <input id="checkbox-item-3" type="checkbox" name="guaira" value="guaira" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Guairá</label>
-                </div>
-            </li>
-            <li>
-                <div class="flex items-center">
-                <input id="checkbox-item-3" type="checkbox" name="caaguazu" value="caaguazu" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Caaguazú</label>
-                </div>
-            </li>
-            <li>
-                <div class="flex items-center">
-                <input id="checkbox-item-3" type="checkbox" name="caazapa" value="caazapa" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Caazapá</label>
-                </div>
-            </li>
-            <li>
-                <div class="flex items-center">
-                <input id="checkbox-item-3" type="checkbox" name="itapua" value="itapua" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Itapúa</label>
-                </div>
-            </li>
-            <li>
-                <div class="flex items-center">
-                <input id="checkbox-item-3" type="checkbox" name="misiones" value="misiones" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Misiones</label>
-                </div>
-            </li>
-            <li>
-                <div class="flex items-center">
-                <input id="checkbox-item-3" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Paraguarí</label>
-                </div>
-            </li>
-            <li>
-                <div class="flex items-center">
-                <input id="checkbox-item-3" type="checkbox" name="alto parana" value="alto parana" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Alto Paraná</label>
-                </div>
-            </li>
-            <li>
-                <div class="flex items-center">
-                <input id="checkbox-item-3" type="checkbox" name="ñeembucu" value="ñeembucu" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Ñeembucú</label>
-                </div>
-            </li>
-            <li>
-                <div class="flex items-center">
-                <input id="checkbox-item-3" type="checkbox" name="amambay" value="amambay" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Amambay</label>
-                </div>
-            </li>
-            <li>
-                <div class="flex items-center">
-                <input id="checkbox-item-3" type="checkbox" name="canindeyu" value="canindeyu" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Canindeyú</label>
-                </div>
-            </li>
-            <li>
-                <div class="flex items-center">
-                <input id="checkbox-item-3" type="checkbox" name="presidente hayes" value="presidente hayes" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Presidente Hayes</label>
-                </div>
-            </li>
-            <li>
-                <div class="flex items-center">
-                <input id="checkbox-item-3" type="checkbox" name="boqueron" value="boqueron" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Boquerón</label>
-                </div>
-            </li>
-            <li>
-                <div class="flex items-center">
-                <input id="checkbox-item-3" type="checkbox" name="alto paraguay" value="alto paraguay" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Alto Paraguay</label>
-                </div>
-            </li>
+    <style>
+        .alinearCheckbox {
+            display: flex;
+            padding: 20px;
+        }
+        button { margin-right: 15px; }
+        
+    </style>
+
+    <div>
+        <div class="navbar bg-stone-200 bg-gradient-to-r from-indigo-500 via-purple-500 to-orange-600">
+          <div class="flex-1">
+            <img class="h-16 ml-5" src="/static/logo.png" alt="Logo de Artesanos">
+          </div>
+          <div class="flex-none">
+            <ul class="menu menu-horizontal p-0">
+              <li style="font-size: 1.65rem; text-decoration: underline;"><a href="/lista">Lista</a></li>
+              <!-- <li><a>Mapa</a></li> -->
             </ul>
-
+          </div>
         </div>
-
-        <button id="dropdownCheckboxButton" data-dropdown-toggle="dropdownCheckboxModalidad" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Modalidad<svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
-
-<!-- Dropdown menu -->
-    <form action="/lista" method="post">
-        <div id="dropdownCheckboxModalidad" class="hidden z-10 w-48 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(0px, 2410px);">
-            <ul class="p-3 space-y-3 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownCheckboxButton">
-            <li>
-                <div class="flex items-center">
-                <input id="checkbox-item-1" type="checkbox" name="Textiles" value="Textiles" class="ola w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                <label for="checkbox-item-1" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Textiles</label>
-                </div>
-            </li>
-            <li>
-                <div class="flex items-center">
-                    <input checked="" id="checkbox-item-2" type="checkbox" value="Cuero" name="Cuero" class="ola w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                    <label for="checkbox-item-2" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Cuero</label>
-                </div>
-            </li>
-            <li>
-                <div class="flex items-center">
-                <input id="checkbox-item-3" type="checkbox" name="Madera" value="Madera" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Madera</label>
-                </div>
-            </li>
-            <li>
-                <div class="flex items-center">
-                <input id="checkbox-item-3" type="checkbox" name="Piedras" value="Piedras" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Piedras</label>
-                </div>
-            </li>
-            <li>
-                <div class="flex items-center">
-                <input id="checkbox-item-3" type="checkbox" name="Metales" value="Metales" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Metales</label>
-                </div>
-            </li>
-            <li>
-                <div class="flex items-center">
-                <input id="checkbox-item-3" type="checkbox" name="Astas" value="Astas" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Astas</label>
-                </div>
-            </li>
-            <li>
-                <div class="flex items-center">
-                <input id="checkbox-item-3" type="checkbox" name="Ceramica" value="Ceramica" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Cerámica</label>
-                </div>
-            </li>
-            <li>
-                <div class="flex items-center">
-                <input id="checkbox-item-3" type="checkbox" name="Fibras Vegetales" value="Fibras Vegetales" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Fibras Vegetales</label>
-                </div>
-            </li>
-        </div>
-
-        <input type="submit" value="Submit" class="btn">
-
-    </form>
+    </div>
+   
+  <div class="alinearCheckbox">
+      <button id="dropdownCheckboxButton" data-dropdown-toggle="dropdownDefaultCheckbox" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Departamento<svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+      
+      <!-- Dropdown menu -->
+        <form action="/lista" method="post">
+            <div id="dropdownDefaultCheckbox" class="hidden z-10 w-48 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(0px, 2410px);">
+                <ul class="p-3 space-y-3 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownCheckboxButton">
+                <li>
+                    <div class="flex items-center">
+                    <input id="checkbox-item-1" type="checkbox" name="central" value="central" class="ola w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                    <label for="checkbox-item-1" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">central</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                        <input checked="" id="checkbox-item-2" type="checkbox" value="asuncion" name="asuncion" class="ola w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                        <label for="checkbox-item-2" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Asunción</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                    <input id="checkbox-item-3" type="checkbox" name="concepcion" value="concepcion" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                    <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Concepción</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                    <input id="checkbox-item-3" type="checkbox" name="cordillera" value="cordillera" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                    <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Cordillera</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                    <input id="checkbox-item-3" type="checkbox" name="guaira" value="guaira" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                    <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Guairá</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                    <input id="checkbox-item-3" type="checkbox" name="caaguazu" value="caaguazu" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                    <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Caaguazú</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                    <input id="checkbox-item-3" type="checkbox" name="caazapa" value="caazapa" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                    <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Caazapá</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                    <input id="checkbox-item-3" type="checkbox" name="itapua" value="itapua" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                    <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Itapúa</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                    <input id="checkbox-item-3" type="checkbox" name="misiones" value="misiones" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                    <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Misiones</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                    <input id="checkbox-item-3" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                    <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Paraguarí</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                    <input id="checkbox-item-3" type="checkbox" name="alto parana" value="alto parana" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                    <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Alto Paraná</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                    <input id="checkbox-item-3" type="checkbox" name="ñeembucu" value="ñeembucu" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                    <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Ñeembucú</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                    <input id="checkbox-item-3" type="checkbox" name="amambay" value="amambay" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                    <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Amambay</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                    <input id="checkbox-item-3" type="checkbox" name="canindeyu" value="canindeyu" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                    <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Canindeyú</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                    <input id="checkbox-item-3" type="checkbox" name="presidente hayes" value="presidente hayes" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                    <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Presidente Hayes</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                    <input id="checkbox-item-3" type="checkbox" name="boqueron" value="boqueron" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                    <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Boquerón</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                    <input id="checkbox-item-3" type="checkbox" name="alto paraguay" value="alto paraguay" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                    <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Alto Paraguay</label>
+                    </div>
+                </li>
+                </ul>
+            </div>
+            <button id="dropdownCheckboxButton" data-dropdown-toggle="dropdownCheckboxModalidad" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Modalidad<svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+      
+      <!-- Dropdown menu -->
+        <form action="/lista" method="post">
+            <div id="dropdownCheckboxModalidad" class="hidden z-10 w-48 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(0px, 2410px);">
+                <ul class="p-3 space-y-3 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownCheckboxButton">
+                <li>
+                    <div class="flex items-center">
+                    <input id="checkbox-item-1" type="checkbox" name="Textiles" value="Textiles" class="ola w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                    <label for="checkbox-item-1" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Textiles</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                        <input checked="" id="checkbox-item-2" type="checkbox" value="Cuero" name="Cuero" class="ola w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                        <label for="checkbox-item-2" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Cuero</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                    <input id="checkbox-item-3" type="checkbox" name="Madera" value="Madera" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                    <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Madera</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                    <input id="checkbox-item-3" type="checkbox" name="Piedras" value="Piedras" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                    <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Piedras</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                    <input id="checkbox-item-3" type="checkbox" name="Metales" value="Metales" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                    <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Metales</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                    <input id="checkbox-item-3" type="checkbox" name="Astas" value="Astas" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                    <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Astas</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                    <input id="checkbox-item-3" type="checkbox" name="Ceramica" value="Ceramica" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                    <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Cerámica</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                    <input id="checkbox-item-3" type="checkbox" name="Fibras Vegetales" value="Fibras Vegetales" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                    <label for="checkbox-item-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Fibras Vegetales</label>
+                    </div>
+                </li>
+            </div>
+            <input type="submit" value="Aplicar" id="btnn">
+        </form>
+  </div>
 
 
     
-
-
-    <!-- <table class="table">
-        {% for i in range(tabla_final.keys()|length) %}
-            <tr>
-                {% for columna in tabla_final.values() %} 
-                    <td>{{ columna[i] }}</td>
-                {% endfor %}
-            </tr>
-        {% endfor %}
-    </table> -->
-
     <div class="px-4 sm:px-6 lg:px-8">
         <div class="mt-8 flex flex-col">
           <div class="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -227,7 +236,6 @@
                     {% for i in range(tabla_final["NOMBRE"]|length) %}
                         <tr>
                             {% for columna in tabla_final.values() %} 
-                                <!-- <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">Lindsay Walton</td> -->
                                 <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ columna[i] }}</td>
                                 
                             {% endfor %}
@@ -261,176 +269,6 @@
       
     </script>
 
-  
-    <!-- <iframe
-        width="600"
-        height="450"
-        style="border:0"
-        loading="lazy"
-        allowfullscreen
-        referrerpolicy="no-referrer-when-downgrade"
-        src="">
-    </iframe> -->
 
-
-    <script>
-
-      // CODIGO PARA LEER DIRECCIÓN DEL DOM (DE LA TABLA) Y MOSTRAR EN EL MAPA
-        // const btn = document.getElementsByTagName("button")
-        // const iframe = document.querySelector("iframe")
-
-        // for (let item of btn) {
-        //     item.addEventListener("click", (e) => {
-        //         // console.log(e.target.parentNode.parentNode.children[3].textContent)
-        //         // let direccion = e.target.parentNode.parentNode.children[3].textContent
-        //         let coords = e.target.parentNode.parentNode.children
-        //         console.log(coords)
-        //         let lat = e.target.parentNode.parentNode.children[3].textContent
-        //         let lon = e.target.parentNode.parentNode.children[4].textContent
-        //         // let url = `https://www.google.com/maps/embed/v1/place?key=AIzaSyCAdCXMXHkxwXSJ-S-Dp23IwMmBxaPZHUQ&q=${direccion},PY`
-        //         let url = `https://www.google.com/maps/embed/v1/place?key=AIzaSyCAdCXMXHkxwXSJ-S-Dp23IwMmBxaPZHUQ&q=${lat}+${lon}`
-
-                
-
-        //         iframe.setAttribute("src", url)
-        //     })
-        // }
-
-        // ##################################################
-        // FUNCION PARA PONER MÚLTIPLES MARKERS EN EL MAPA CON UNA LISTA DE COORDENADAS
-        // function initMap() {
-          
-        //   const map = new google.maps.Map(document.getElementById("map"), {
-        //     zoom: 3,
-        //     center: { lat: -27.285474, lng: -55.916571 },
-        //   });
-
-        //   const infoWindow = new google.maps.InfoWindow({
-        //     content: "",
-        //     disableAutoPan: true,
-        //   });
-        //   // Create an array of alphabetical characters used to label the markers.
-        //   const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        //   // Add some markers to the map.
-        //   const markers = locations.map((position, i) => {
-        //     const label = labels[i % labels.length];
-        //     const marker = new google.maps.Marker({
-        //       position,
-        //       label,
-        //     });
-
-        //     // markers can only be keyboard focusable when they have click listeners
-        //     // open info window when marker is clicked
-        //     marker.addListener("click", () => {
-        //       infoWindow.setContent(label);
-        //       infoWindow.open(map, marker);
-        //     });
-        //     return marker;
-        //   });
-
-        //   const markerCluster = new markerClusterer.MarkerClusterer({ map, markers });
-
-
-        //   // Add a marker clusterer to manage the markers.
-        //   // new MarkerClusterer({ markers, map });
-        // }
-
-        const locations = [
-          { lat: -25.218241, lng: -57.417544 },
-          { lat: -22.343947, lng: -60.054487 },
-          { lat: -25.278246, lng: -57.177720 },
-          { lat: -25.287430, lng: -57.666551 },
-          { lat: -25.083245, lng: -57.526387 },
-          { lat: -25.690741, lng: -56.469095 }
-        ];
-
-        // #########################################
-
-        // FUNCIÓN PARA REVERSE GEOCODING (de coordenada a dirección normal)
-        // function initMap() {
-        //   const map = new google.maps.Map(document.getElementById("map"), {
-        //     zoom: 8,
-        //     center: { lat: 40.731, lng: -73.997 },
-        //   });
-        //   const geocoder = new google.maps.Geocoder();
-        //   const infowindow = new google.maps.InfoWindow();
-
-        //   document.getElementById("submit").addEventListener("click", () => {
-        //     geocodeLatLng(geocoder, map, infowindow);
-        //   });
-        // }
-
-        // function geocodeLatLng(geocoder, map, infowindow) {
-        //   const input = document.getElementById("latlng").value;
-        //   const latlngStr = input.split(",", 2);
-        //   const latlng = {
-        //     lat: parseFloat(latlngStr[0]),
-        //     lng: parseFloat(latlngStr[1]),
-        //   };
-
-        //   geocoder
-        //     .geocode({ location: latlng })
-        //     .then((response) => {
-        //       if (response.results[0]) {
-        //         map.setZoom(11);
-
-        //         const marker = new google.maps.Marker({
-        //           position: latlng,
-        //           map: map,
-        //         });
-
-        //         // En el mapa se nos redirige a la coordenada pero se muestra la dirección normal
-        //         infowindow.setContent(response.results[0].formatted_address);
-        //         infowindow.open(map, marker);
-
-        //         // Con estas coordenadas: -25.287430,-57.666551
-        //         // Esto muestra la direccion normal en la consola:
-        //         // console.log(response.results[0].formatted_address)
-        //         //    P86M+F7Q, Ruy Díaz de Guzmán, Asunción, Paraguay
-
-        //       } else {
-        //         window.alert("No results found");
-        //       }
-        //     })
-        //     .catch((e) => window.alert("Geocoder failed due to: " + e));
-        // }
-
-
-
-        // const a = [
-        //   { lat: -25.287430, lng: -57.666551 },
-        //   { lat: -25.083245, lng: -57.526387 },
-        //   { lat: -25.690741, lng: -56.469095 },
-        //   { lat: -35.304724, lng: 148.662905 },
-        //   { lat: -36.817685, lng: 175.699196 },
-        //   { lat: -36.828611, lng: 175.790222 },
-        //   { lat: -37.75, lng: 145.116667 },
-        //   { lat: -37.759859, lng: 145.128708 },
-        //   { lat: -37.765015, lng: 145.133858 },
-        //   { lat: -37.770104, lng: 145.143299 },
-        //   { lat: -37.7737, lng: 145.145187 },
-        //   { lat: -37.774785, lng: 145.137978 },
-        //   { lat: -37.819616, lng: 144.968119 },
-        //   { lat: -38.330766, lng: 144.695692 },
-        //   { lat: -39.927193, lng: 175.053218 },
-        //   { lat: -41.330162, lng: 174.865694 },
-        //   { lat: -42.734358, lng: 147.439506 },
-        //   { lat: -42.734358, lng: 147.501315 },
-        //   { lat: -42.735258, lng: 147.438 },
-        //   { lat: -43.999792, lng: 170.463352 },
-        // ]
-
-        // window.initMap = initMap;
-
-
-
-
-
-    </script> 
-
-    <!-- <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAdCXMXHkxwXSJ-S-Dp23IwMmBxaPZHUQ&callback=initMap&v=weekly"
-      defer
-    ></script> -->
 </body>
 </html>

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,21 +12,20 @@
 </head>
 <body>
 
-    
-
-  <!-- Nav bar -->
-    <div>
-      <div class="navbar bg-stone-200">
-        <div class="flex-1">
-          <img class="h-16 ml-5" src="/static/logo.png" alt="Logo de Artesanos">
-        </div>
-        <div class="flex-none">
-          <ul class="menu menu-horizontal p-0">
-            <li><a href="/lista">Lista</a></li>
-            <!-- <li><a>Mapa</a></li> -->
-          </ul>
-        </div>
+ <!-- Nav bar -->
+ <div>
+    <div class="navbar bg-stone-200 bg-gradient-to-r from-indigo-500 via-purple-500 to-orange-600">
+      <div class="flex-1">
+        <img class="h-16 ml-5" src="/static/logo.png" alt="Logo de Artesanos">
       </div>
+      <div class="flex-none">
+        <ul class="menu menu-horizontal p-0">
+          <li style="font-size: 1.65rem; text-decoration: underline;"><a href="/lista">Lista</a></li>
+          <!-- <li><a>Mapa</a></li> -->
+        </ul>
+      </div>
+    </div>
+
 <br>
       
 
@@ -34,40 +34,40 @@
 
 
 <!-- Categorias -->
-      <div class="segunda_barra">
-        <div class="px-6 pt-4 pb-2">
-    <span class="#">Categorias: &nbsp; &nbsp; <br><br> </span>
-    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#ceramica</span>
-    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#madera</span>
-    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#textiles</span>
-    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#piedras</span>
-   
+<div class="segunda_barra">
+    <div class="px-6 pt-4 pb-2">
+<span class="#">Categorias: &nbsp; &nbsp; <br><br> </span>
+<span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#ceramica</span>
+<span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#madera</span>
+<span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#textiles</span>
+<span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#piedras</span>
+
+
     <br>
     <br>
           <!-- Div de Medalla al Merito -->
 
-    <h1 class="font-bold text-xl">Medalla al Merito</h1>
+    <h1 style="font-size: 1.65rem;" class="font-bold text-xl">Medalla al Merito</h1>
+    
       <div class=" p-4">
         <div class="carousel carousel-center rounded-box">
-            <a href="/perfiles/7804">
                 <div class="carousel-item">
                   <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
-                    <img class="w-full" src="/static/carpincho.jpg" alt="Sunset in the mountains">
+                    <a href="/perfiles/7804"><img class="w-[345px] h-[224px]" src="/static/Artesano_2.jpg" alt="Artesano">
                     <div class="px-6 py-4">
-                    <div class="text-xl mb-2">Rita Romero
-                    </div>
+                    <div style="font-size: 1.65rem;" class="text-xl mb-2">Oscar Romero</div>
                     <p class="text-gray-700 text-base">
                   </div>
                 </div>
                           </div>
-            </a> 
-          <a href="/perfiles/1433">
+            </a>
+          
               <div class="carousel-item">
                 <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
-                  <img class="w-full" src="/static/carpincho.jpg" alt="Sunset in the mountains">
-                  <div class="px-6 py-4">
-                  <div class="text-xl mb-2">Delia Espinola</div>
-                  <p class="text-gray-700 text-base">
+                    <a href="/perfiles/1433"><img class="w-[345px] h-[70%]" src="/static/Artesano_3.jpg" alt="Artesano">
+                    <div class="px-6 py-4">
+                    <div style="font-size: 1.65rem;" class="text-xl mb-2">Josue Benítez</div>
+                    <p class="text-gray-700 text-base">
               
                   </p>
                   </div>
@@ -77,12 +77,12 @@
               </div>
               </div>
           </a>
-          <a href="">
+          
               <div class="carousel-item">
                   <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
-                    <img class="w-full" src="/static/carpincho.jpg" alt="Sunset in the mountains">
+                    <a href="/perfiles/7569"><img class="w-[345px] h-[70%]" src="/static/Artesano_4.jpg" alt="Sunset in the mountains">
                     <div class="px-6 py-4">
-                    <div class="text-xl mb-2">Graciela Vargas</div>
+                    <div style="font-size: 1.65rem;" class="text-xl mb-2">Cesar Flores</div>
                     <p class="text-gray-700 text-base">
               
                     </p>
@@ -93,266 +93,223 @@
                 </div>
               </div>
           </a>
-            <div class="carousel-item">
-              <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
-                <img class="w-full" src="/static/carpincho.jpg" alt="Sunset in the mountains">
-                <div class="px-6 py-4">
-                <div class="text-xl mb-2">Laura Giménez</div>
-                <p class="text-gray-700 text-base">
-                    
-                </p>
+            
+                <div class="carousel-item">
+                  <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
+                    <a href="/perfiles/1666"><img class="w-[345px] h-[70%]" src="/static/Artesano_6.jpeg" alt="Sunset in the mountains"></a>
+                    <div class="px-6 py-4">
+                    <div style="font-size: 1.65rem;" class="text-xl mb-2">Julian Ortiz</div>
+                    <p class="text-gray-700 text-base">
+                
+                    </p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                
+                  </div>
                 </div>
-                <div class="px-6 pt-4 pb-2">
-                
-              </div>
-            </div>
-          </div> 
-          <div class="carousel-item">
-            <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
-              <img class="w-full" src="/static/carpincho.jpg" alt="Sunset in the mountains">
-              <div class="px-6 py-4">
-              <div class="text-xl mb-2">Matheo Duarte</div>
-              <p class="text-gray-700 text-base">
-                  
-              </p>
-              </div>
-              <div class="px-6 pt-4 pb-2">
-            </div>
-          </div>
-        </div> 
-        <div class="carousel-item">
-          <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
-            <img class="w-full" src="/static/carpincho.jpg" alt="Sunset in the mountains">
-            <div class="px-6 py-4">
-            <div class="text-xl mb-2">Matheo Duarte</div>
-            <p class="text-gray-700 text-base">
-                
-            </p>
-            </div>
-            <div class="px-6 pt-4 pb-2">
-          </div>
-        </div>
-        </div> 
-          <div class="carousel-item">
-            <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
-              <img class="w-full" src="/static/carpincho.jpg" alt="Sunset in the mountains">
-              <div class="px-6 py-4">
-              <div class="text-xl mb-2">Fidelino Martinez</div>
-              <p class="text-gray-700 text-base">
-                  
-              </p>
-              </div>
-              <div class="px-6 pt-4 pb-2">
+                </div>
+            </a>
+          
+              <div class="carousel-item">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
+                    <a href="/perfiles/1597"><img class="w-[345px] h-[70%]" src="/static/Artesano_8.jpg" alt="Sunset in the mountains">
+                  <div class="px-6 py-4">
+                  <div style="font-size: 1.65rem;" class="text-xl mb-2">Juliana Paez</div>
+                  <p class="text-gray-700 text-base">
               
-            </div>
-          </div>
-          </div> 
-          <div class="carousel-item">
-              <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
-                <img class="w-full" src="/static/carpincho.jpg" alt="Sunset in the mountains">
-                <div class="px-6 py-4">
-                <div class="text-xl mb-2">David Páez</div>
-                <p class="text-gray-700 text-base">
-                    
-                </p>
+                  </p>
+                  </div>
+                  <div class="px-6 pt-4 pb-2">
                 </div>
-                <div class="px-6 pt-4 pb-2">
-                
               </div>
-            </div>
-          </div> 
+                      </div>
+          </a>
+        
             <div class="carousel-item">
               <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
-                <img class="w-full" src="/static/carpincho.jpg" alt="Sunset in the mountains">
+                <a href="/perfiles/5805"><img class="w-[345px] h-[70%]" src="/static/Artesano_9.jpg" alt="Sunset in the mountains"></a>
                 <div class="px-6 py-4">
-                <div class="text-xl mb-2">Matheo Duarte</div>
+                <div style="font-size: 1.65rem;" class="text-xl mb-2">Graciela Vargas</div>
                 <p class="text-gray-700 text-base">
-                    
+            
                 </p>
                 </div>
                 <div class="px-6 pt-4 pb-2">
-                
               </div>
             </div>
-          </div> 
-          <div class="carousel-item">
-            <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
-              <img class="w-full" src="/static/carpincho.jpg" alt="Sunset in the mountains">
-              <div class="px-6 py-4">
-              <div class="text-xl mb-2">Matheo Duarte</div>
-              <p class="text-gray-700 text-base">
-                  
-              </p>
+            </div>
+        </a>
+          
+              <div class="carousel-item">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
+                    <a href="/perfiles/7787"><img class="w-[345px] h-[70%]" src="/static/Artesano_10.jpg" alt="Sunset in the mountains">
+                  <div class="px-6 py-4">
+                  <div style="font-size: 1.65rem;" class="text-xl mb-2">Laura Gimenez</div>
+                  <p class="text-gray-700 text-base">
+              
+                  </p>
+                  </div>
+                  <div class="px-6 pt-4 pb-2">
+              
+                </div>
               </div>
-              <div class="px-6 pt-4 pb-2">
-            </div>
-          </div>
-        </div> 
-        <div class="carousel-item">
-          <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
-            <img class="w-full" src="/static/carpincho.jpg" alt="Sunset in the mountains">
-            <div class="px-6 py-4">
-            <div class="text-xl mb-2">Matheo Duarte</div>
-            <p class="text-gray-700 text-base">
-                
-            </p>
-            </div>
-            <div class="px-6 pt-4 pb-2">
-          </div>
-        </div>
+              </div>
+          </a>
+          
+              <div class="carousel-item">
+                  <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
+                    <a href="/perfiles/7843"></a><img class="w-[345px] h-[70%]" src="/static/Artesano_11.jpg" alt="Sunset in the mountains">
+                    <div class="px-6 py-4">
+                    <div style="font-size: 1.65rem;" class="text-xl mb-2">Nilda Ozuna</div>
+                    <p class="text-gray-700 text-base">
+              
+                    </p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+              
+                  </div>
+                </div>
+              </div>
+          </a>
+            
+                <div class="carousel-item">
+                  <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
+                    <a href="/perfiles/3592"></a><img class="w-[345px] h-[70%]" src="/static/Artesano_12.jpg" alt="Sunset in the mountains">
+                    <div class="px-6 py-4">
+                    <div style="font-size: 1.65rem;" class="text-xl mb-2">Towote San Martin</div>
+                    <p class="text-gray-700 text-base">
+                    </p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                  </div>
+                </div>
+                          </div>
+            </a>
       </div> 
         
         </div>
     </div>
     
     <!-- Maestros Artesanos -->
-    <h1 class="font-bold text-xl">Maestros Artesanos</h1>
+    <h1 style="font-size: 1.65rem;" class="font-bold text-xl m-5">Maestros Artesanos</h1>
 
     <div class=" p-4">
       <div class="carousel carousel-center rounded-box">
-          <div class="carousel-item">
-            <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
-              <img class="w-full" src="/static/carpincho.jpg" alt="Sunset in the mountains">
-              <div class="px-6 py-4">
-              <div class="text-xl mb-2">Elias Florentin</div>
-              <p class="text-gray-700 text-base">
-            </div>
-          </div>
-        </div> 
-        <div class="carousel-item">
-          <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
-            <img class="w-full" src="/static/carpincho.jpg" alt="Sunset in the mountains">
-            <div class="px-6 py-4">
-            <div class="text-xl mb-2">Fidelino Martinez</div>
-            <p class="text-gray-700 text-base">
-                
-            </p>
-            </div>
-            <div class="px-6 pt-4 pb-2">
+          
+              <div class="carousel-item">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
+                    <a href="/perfiles/13869"><img class="w-[345px] h-[70%]" src="/static/Artesano_14.jpg" alt="Sunset in the mountains">
+                  <div class="px-6 py-4">
+                  <div style="font-size: 1.65rem;" class="text-xl mb-2">Aamalia Vargas</div>
+                  <p class="text-gray-700 text-base">
+                </div>
+              </div>
+                      </div>
+          </a>
+        
+            <div class="carousel-item">
+              <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
+                <a href="/perfiles/12145"></a><img class="w-[345px] h-[70%]" src="/static/Artesano_15.jpg" alt="Sunset in the mountains">
+                <div class="px-6 py-4">
+                <div style="font-size: 1.65rem;" class="text-xl mb-2">Abel Sosa</div>
+                <p class="text-gray-700 text-base">
             
-          </div>
-        </div>
-        </div> 
-        <div class="carousel-item">
-            <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
-              <img class="w-full" src="/static/carpincho.jpg" alt="Sunset in the mountains">
-              <div class="px-6 py-4">
-              <div class="text-xl mb-2">David Páez</div>
-              <p class="text-gray-700 text-base">
-                  
-              </p>
-              </div>
-              <div class="px-6 pt-4 pb-2">
-              
-            </div>
-          </div>
-        </div> 
-          <div class="carousel-item">
-            <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
-              <img class="w-full" src="/static/carpincho.jpg" alt="Sunset in the mountains">
-              <div class="px-6 py-4">
-              <div class="text-xl mb-2">Matheo Duarte</div>
-              <p class="text-gray-700 text-base">
-                  
-              </p>
-              </div>
-              <div class="px-6 pt-4 pb-2">
-              
-            </div>
-          </div>
-        </div> 
-        <div class="carousel-item">
-          <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
-            <img class="w-full" src="/static/carpincho.jpg" alt="Sunset in the mountains">
-            <div class="px-6 py-4">
-            <div class="text-xl mb-2">Matheo Duarte</div>
-            <p class="text-gray-700 text-base">
-                
-            </p>
-            </div>
-            <div class="px-6 pt-4 pb-2">
-          </div>
-        </div>
-      </div> 
-      <div class="carousel-item">
-        <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
-          <img class="w-full" src="/static/carpincho.jpg" alt="Sunset in the mountains">
-          <div class="px-6 py-4">
-          <div class="text-xl mb-2">Matheo Duarte</div>
-          <p class="text-gray-700 text-base">
-              
-          </p>
-          </div>
-          <div class="px-6 pt-4 pb-2">
-        </div>
-      </div>
-      </div> 
-        <div class="carousel-item">
-          <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
-            <img class="w-full" src="/static/carpincho.jpg" alt="Sunset in the mountains">
-            <div class="px-6 py-4">
-            <div class="text-xl mb-2">Nicolas Calicchio</div>
-            <p class="text-gray-700 text-base">
-                
-            </p>
-            </div>
-            <div class="px-6 pt-4 pb-2">
+                </p>
+                </div>
+                <div class="px-6 pt-4 pb-2">
             
-          </div>
-        </div>
-        </div> 
-        <div class="carousel-item">
-            <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
-              <img class="w-full" src="/static/carpincho.jpg" alt="Sunset in the mountains">
-              <div class="px-6 py-4">
-              <div class="text-xl mb-2">Santos Lima</div>
-              <p class="text-gray-700 text-base">
-                  
-              </p>
               </div>
-              <div class="px-6 pt-4 pb-2">
-              
             </div>
-          </div>
-        </div> 
+            </div>
+        </a>
+        
+            <div class="carousel-item">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
+                    <a href="/perfiles/13620"><img class="w-[345px] h-[70%]" src="/static/EpNTs1YXMAAK9R5.jpg" alt="Sunset in the mountains">
+                  <div class="px-6 py-4">
+                  <div style="font-size: 1.65rem;" class="text-xl mb-2">Abel Etcheverry</div>
+                  <p class="text-gray-700 text-base">
+            
+                  </p>
+                  </div>
+                  <div class="px-6 pt-4 pb-2">
+            
+                </div>
+              </div>
+            </div>
+        </a> 
+          
+              <div class="carousel-item">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
+                    <a href="/perfiles/6601"><img class="w-[345px] h-[70%]" src="/static/EpNTsQ3W8AQRH2v.jpg" alt="Sunset in the mountains">
+                  <div class="px-6 py-4">
+                  <div style="font-size: 1.65rem;" class="text-xl mb-2">Abelina Vinz</div>
+                  <p class="text-gray-700 text-base">
+              
+                  </p>
+                  </div>
+                  <div class="px-6 pt-4 pb-2">
+              
+                </div>
+              </div>
+                      </div>
+          </a>
+        
+            <div class="carousel-item">
+              <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
+                <a href="/perfiles/13605"></a><img class="w-[345px] h-[70%]" src="/static/EpNTuApXUAIrxBj.jpg" alt="Sunset in the mountains">
+                <div class="px-6 py-4">
+                <div style="font-size: 1.65rem;" class="text-xl mb-2">Abelina Yura</div>
+                <p class="text-gray-700 text-base">
+            
+                </p>
+                </div>
+                <div class="px-6 pt-4 pb-2">
+              </div>
+            </div>
+                  </div>
+        </a>
+      
           <div class="carousel-item">
             <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
-              <img class="w-full" src="/static/carpincho.jpg" alt="Sunset in the mountains">
+                <a href="/perfiles/1406"><img class="w-[345px] h-[70%]" src="/static/Artesano_17.jpg" alt="Sunset in the mountains">
               <div class="px-6 py-4">
-              <div class="text-xl mb-2">Fabio Bulacios</div>
+              <div style="font-size: 1.65rem;" class="text-xl mb-2">Abrahan Chavez</div>
+              <p class="text-gray-700 text-base">
+          
+              </p>
+              </div>
+              <div class="px-6 pt-4 pb-2">
+            </div>
+          </div>
+          </div>
+      </a>
+        
+            <div class="carousel-item">
+              <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
+                <a href="/perfiles/7933"></a><img class="w-[345px] h-[70%]" src="/static/Artesano_18.jpg" alt="Sunset in the mountains">
+                <div class="px-6 py-4">
+                <div style="font-size: 1.65rem;" class="text-xl mb-2">Abrahan Villalba</div>
+                <p class="text-gray-700 text-base">
+            
+                </p>
+                </div>
+                <div class="px-6 pt-4 pb-2">
+            
+              </div>
+            </div>
+            </div>
+        </a>
+        <div class="carousel-item">
+            <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
+              <a href="/perfiles/13620"><img class="w-[345px] h-[70%]" src="/static/artesano_52.jpg" alt="Sunset in the mountains"></a>
+              <div class="px-6 py-4">
+              <div style="font-size: 1.65rem;" class="text-xl mb-2">Abel Etcheverry</div>
               <p class="text-gray-700 text-base">
                   
               </p>
               </div>
               <div class="px-6 pt-4 pb-2">
-              
-            </div>
-          </div>
-        </div> 
-        <div class="carousel-item">
-          <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
-            <img class="w-full" src="/static/carpincho.jpg" alt="Sunset in the mountains">
-            <div class="px-6 py-4">
-            <div class="text-xl mb-2">Matheo Duarte</div>
-            <p class="text-gray-700 text-base">
-                
-            </p>
-            </div>
-            <div class="px-6 pt-4 pb-2">
-          </div>
-        </div>
-      </div> 
-      <div class="carousel-item">
-        <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
-          <img class="w-full" src="/static/carpincho.jpg" alt="Sunset in the mountains">
-          <div class="px-6 py-4">
-          <div class="text-xl mb-2">Matheo Duarte</div>
-          <p class="text-gray-700 text-base">
-              
-          </p>
-          </div>
-          <div class="px-6 pt-4 pb-2">
-        </div>
       </div>
     </div> 
       </div>
@@ -360,23 +317,23 @@
   
 
   <!-- Ciudades -->
-  <h1 class="font-bold text-xl">Ciudades</h1>
+  <h1 style="font-size: 1.65rem;" class="font-bold text-xl">Ciudades</h1>
   <div class=" p-4">
     <div class="carousel carousel-center rounded-box">
         <div class="carousel-item">
           <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
-            <img class="w-full" src="/static/carpincho.jpg" alt="Sunset in the mountains">
+            <img class="w-[345px] h-[70%]" src="/static/Alto Paraguay.jpg" alt="Alto Paraguay">
             <div class="px-6 py-4">
-            <div class="text-xl mb-2">Luque</div>
+            <div style="font-size: 1.65rem;" class="text-xl mb-2">Alto Paraguay</div>
             <p class="text-gray-700 text-base">
           </div>
         </div>
       </div> 
       <div class="carousel-item">
         <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
-          <img class="w-full" src="/static/carpincho.jpg" alt="Sunset in the mountains">
+          <img class="w-[345px] h-[70%]" src="/static/Alto Paraná.jpg" alt="Sunset in the mountains">
           <div class="px-6 py-4">
-          <div class="text-xl mb-2">Fidelino Martinez</div>
+          <div style="font-size: 1.65rem;" class="text-xl mb-2">Fidelino Martinez</div>
           <p class="text-gray-700 text-base">
               
           </p>
@@ -388,9 +345,9 @@
       </div> 
       <div class="carousel-item">
           <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
-            <img class="w-full" src="/static/carpincho.jpg" alt="Sunset in the mountains">
+            <img class="w-[345px] h-[70%]" src="/static/Central.jpg" alt="Sunset in the mountains">
             <div class="px-6 py-4">
-            <div class="text-xl mb-2">Lambare</div>
+            <div style="font-size: 1.65rem;" class="text-xl mb-2">Lambare</div>
             <p class="text-gray-700 text-base">
                 
             </p>
@@ -402,9 +359,9 @@
       </div> 
         <div class="carousel-item">
           <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
-            <img class="w-full" src="/static/carpincho.jpg" alt="Sunset in the mountains">
+            <img class="w-[345px] h-[70%]" src="/static/San Pedro.jpg" alt="Sunset in the mountains">
             <div class="px-6 py-4">
-            <div class="text-xl mb-2">Ñemby</div>
+            <div style="font-size: 1.65rem;" class="text-xl mb-2">Ñemby</div>
             <p class="text-gray-700 text-base">
                 
             </p>
@@ -416,9 +373,9 @@
       </div> 
       <div class="carousel-item">
         <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
-          <img class="w-full" src="/static/carpincho.jpg" alt="Sunset in the mountains">
+          <a href="/asuncion"><img class="w-[345px] h-[70%]" src="/static/Itapua.jpg" alt="Sunset in the mountains"></a>
           <div class="px-6 py-4">
-          <div class="text-xl mb-2">Asuncion</div>
+          <div style="font-size: 1.65rem;" class="text-xl mb-2">Asuncion</div>
           <p class="text-gray-700 text-base">
               
           </p>
@@ -429,9 +386,9 @@
     </div> 
     <div class="carousel-item">
       <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
-        <img class="w-full" src="/static/carpincho.jpg" alt="Sunset in the mountains">
+        <img class="w-[345px] h-[70%]" src="/static/Boqueron.jpg" alt="Sunset in the mountains">
         <div class="px-6 py-4">
-        <div class="text-xl mb-2">Encarnacion</div>
+        <div style="font-size: 1.65rem;" class="text-xl mb-2">Encarnacion</div>
         <p class="text-gray-700 text-base">
             
         </p>
@@ -442,9 +399,9 @@
     </div> 
       <div class="carousel-item">
         <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
-          <img class="w-full" src="/static/carpincho.jpg" alt="Sunset in the mountains">
+          <img class="w-[345px] h-[70%]" src="/static/Paraguari.jpg" alt="Sunset in the mountains">
           <div class="px-6 py-4">
-          <div class="text-xl mb-2">Filadelfia</div>
+          <div style="font-size: 1.65rem;" class="text-xl mb-2">Filadelfia</div>
           <p class="text-gray-700 text-base">
               
           </p>
@@ -456,9 +413,9 @@
       </div> 
       <div class="carousel-item">
           <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
-            <img class="w-full" src="/static/carpincho.jpg" alt="Sunset in the mountains">
+            <img class="w-[345px] h-[70%]" src="/static/Guaira.jpg" alt="Sunset in the mountains">
             <div class="px-6 py-4">
-            <div class="text-xl mb-2">Ciudad del Este</div>
+            <div style="font-size: 1.65rem;" class="text-xl mb-2">Ciudad del Este</div>
             <p class="text-gray-700 text-base">
                 
             </p>
@@ -470,9 +427,9 @@
       </div> 
         <div class="carousel-item">
           <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
-            <img class="w-full" src="/static/carpincho.jpg" alt="Sunset in the mountains">
+            <img class="w-[345px] h-[70%]" src="/static/Cordillera.jpg" alt="Sunset in the mountains">
             <div class="px-6 py-4">
-            <div class="text-xl mb-2">Fernando de la Mora</div>
+            <div style="font-size: 1.65rem;" class="text-xl mb-2">Fernando de la Mora</div>
             <p class="text-gray-700 text-base">
                 
             </p>
@@ -482,29 +439,8 @@
           </div>
         </div>
       </div> 
-      <div class="carousel-item">
-        <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
-          <img class="w-full" src="/static/carpincho.jpg" alt="Sunset in the mountains">
-          <div class="px-6 py-4">
-          <div class="text-xl mb-2">Villarica</div>
-          <p class="text-gray-700 text-base">
-              
-          </p>
-          </div>
-          <div class="px-6 pt-4 pb-2">
-        </div>
       </div>
     </div> 
-    <div class="carousel-item">
-      <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
-        <img class="w-full" src="/static/carpincho.jpg" alt="Sunset in the mountains">
-        <div class="px-6 py-4">
-        <div class="text-xl mb-2">Colonia Iguazu</div>
-        <p class="text-gray-700 text-base">        
-        </p>
-        </div>
-        <div class="px-6 pt-4 pb-2">
-      </div>
     </div>
   </div> 
     </div>
@@ -535,6 +471,9 @@ Pie de Pagina -->
           <div>
               <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Seguinos en</h2>
               <ul class="text-gray-600 dark:text-gray-400">
+                <li class="mb-4">
+                  <a href="https://twitter.com/IpaParaguay" class="hover:underline " target="_blank">Twitter</a>
+              </li>
                   <li class="mb-4">
                       <a href="https://www.instagram.com/institutoparaguayodeartesania/?hl=es" class="hover:underline " target="_blank">Instagram</a>
                   </li>
@@ -562,8 +501,5 @@ Pie de Pagina -->
       </span>
   </div>
 </footer>
-
-
-    
 </body>
 </html>

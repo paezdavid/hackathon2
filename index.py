@@ -1,7 +1,7 @@
 
 from flask import Flask, render_template, url_for, session, redirect, request
 import pandas as pd
-import requests
+
 
 
 app = Flask(__name__)
@@ -10,6 +10,11 @@ app = Flask(__name__)
 def index():
 
    return render_template("landing.html")
+
+@app.route("/asuncion")
+def asuncion():
+
+   return render_template("templatee.html")
 
 
 @app.route("/lista")
@@ -46,13 +51,6 @@ def perfil(perfil_id):
     print(fila_dict)
 
     return render_template("perfil.html", fila=fila_dict)
-    # return render_template("landing.html")
-    # return render_template("filtros.html")
-
-    
-
-    # session['my_var'] = 'my_value'
-    # return redirect(url_for('b'))
 
 @app.route("/lista", methods = ['POST'])
 def lista_filt():
@@ -77,43 +75,15 @@ def lista_filt():
     dataf = pd.DataFrame()
     
 
-    # for ciudad in selecciones:
-    #     fila_df = tabla_final.loc[df["DEPARTAMENTO"] == ciudad]
-        
-
-    #     if not fila_df.empty:
-            
-    #         print(ciudad)
-    #         print(fila_df)
-    #         dataf = pd.concat([dataf, fila_df])
-    #         print("asjkdhaksjdhaskdhaksjda")
-    #         print(dataf)
-
-
-    # dataf = dataf.reset_index(drop=True)
-    # tabla_final = dataf.to_dict()
-
-    # print(tabla_final)
-
     for ciudad in selecciones:
-        fila_df_ciudad = tabla_final.loc[df["DEPARTAMENTO"] == ciudad]
-        fila_df_modalidad = tabla_final.loc[df["MODALIDAD"] == ciudad]
+        fila_df = tabla_final.loc[df["DEPARTAMENTO"] == ciudad]
         
 
-
-        if not fila_df_ciudad.empty:
+        if not fila_df.empty:
             
             print(ciudad)
-            print(fila_df_ciudad)
-            dataf = pd.concat([dataf, fila_df_ciudad])
-            print("asjkdhaksjdhaskdhaksjda")
-            print(dataf)
-        
-        if not fila_df_modalidad.empty:
-            
-            print(ciudad)
-            print(fila_df_modalidad)
-            dataf = pd.concat([dataf, fila_df_modalidad])
+            print(fila_df)
+            dataf = pd.concat([dataf, fila_df])
             print("asjkdhaksjdhaskdhaksjda")
             print(dataf)
 
@@ -121,6 +91,12 @@ def lista_filt():
     dataf = dataf.reset_index(drop=True)
     tabla_final = dataf.to_dict()
 
+    print(tabla_final)
+
+
+
+    dataf = dataf.reset_index(drop=True)
+    tabla_final = dataf.to_dict()
     print(tabla_final)
 
 
