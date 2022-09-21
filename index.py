@@ -62,25 +62,12 @@ def lista_filt():
 
     # Leer el excel
     df = pd.read_excel("./plantillaa.xlsx")
-    
-    # departamentos = ['central', 'asuncion', 'concepcion', 'cordillera', 'guaira', 'caaguazu', 'caazapa', 'itapua', 'misiones', 'paraguari', 'alto parana', 'ñeembucu', 'amambay', 'canindeyu', 'presidente hayes', 'boqueron', 'alto paraguay']
-    
-    # for column in df:
-        # fila = df.loc[df["DEPARTAMENTO"] == check["central"]]
-
-        
-        # print(df[column].values)
-
-        # if df.loc[df["DEPARTAMENTO"] == check[depa]]:
-        #     print(check[lista[depa]])
 
     selecciones = []
     for key in check.keys():
         selecciones.append(key)
 
     print(selecciones)
-    # # Buscar una fila con el valor del id y guardarla en una variable
-    # fila = df.loc[df["DEPARTAMENTO"] == selecciones[0]]
 
     print("-----------------")
     datos_que_necesito = ["NOMBRE", "APELLIDO", "MODALIDAD", "DEPARTAMENTO", "direcciones", "REG NRO"]
@@ -90,21 +77,43 @@ def lista_filt():
     dataf = pd.DataFrame()
     
 
+    # for ciudad in selecciones:
+    #     fila_df = tabla_final.loc[df["DEPARTAMENTO"] == ciudad]
+        
+
+    #     if not fila_df.empty:
+            
+    #         print(ciudad)
+    #         print(fila_df)
+    #         dataf = pd.concat([dataf, fila_df])
+    #         print("asjkdhaksjdhaskdhaksjda")
+    #         print(dataf)
+
+
+    # dataf = dataf.reset_index(drop=True)
+    # tabla_final = dataf.to_dict()
+
+    # print(tabla_final)
+
     for ciudad in selecciones:
-        fila_df = tabla_final.loc[df["DEPARTAMENTO"] == ciudad]
+        fila_df_ciudad = tabla_final.loc[df["DEPARTAMENTO"] == ciudad]
+        fila_df_modalidad = tabla_final.loc[df["MODALIDAD"] == ciudad]
         
 
-        # if fila_df.equals(tabla_final.loc[df["DEPARTAMENTO"] == ciudad]):
-        
-        # if tabla_final.loc[df["DEPARTAMENTO"] == ciudad].equals(fila_df):
-        #     print("igual")
-        #     print(fila_df)
 
-        if not fila_df.empty:
+        if not fila_df_ciudad.empty:
             
             print(ciudad)
-            print(fila_df)
-            dataf = pd.concat([dataf, fila_df])
+            print(fila_df_ciudad)
+            dataf = pd.concat([dataf, fila_df_ciudad])
+            print("asjkdhaksjdhaskdhaksjda")
+            print(dataf)
+        
+        if not fila_df_modalidad.empty:
+            
+            print(ciudad)
+            print(fila_df_modalidad)
+            dataf = pd.concat([dataf, fila_df_modalidad])
             print("asjkdhaksjdhaskdhaksjda")
             print(dataf)
 
@@ -116,14 +125,6 @@ def lista_filt():
 
 
 
-
-
-    # tabla_final = fila.to_dict(orient='list')
-
-    # print(fila)
-
-    # EL ERROR ESTÁ EN EL CASING DE LAS LETRAS
-    
 
     # return redirect(url_for('lista', tabla_final=tabla_final))
     return render_template("lista.html", tabla_final=tabla_final)
