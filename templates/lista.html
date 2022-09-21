@@ -24,12 +24,16 @@
 
     <div>
         <div class="navbar bg-stone-200 bg-gradient-to-r from-indigo-500 via-purple-500 to-orange-600">
-          <div class="flex-1">
-            <img class="h-16 ml-5" src="/static/logo.png" alt="Logo de Artesanos">
-          </div>
+          <a href="/">
+              <div class="flex-1 p-2">
+                <img class="h-16 ml-5" src="/static/logo.png" alt="Logo de Artesanos">
+              </div>
+          </a>
           <div class="flex-none">
             <ul class="menu menu-horizontal p-0">
-              <li style="font-size: 1.65rem; text-decoration: underline;"><a href="/lista">Lista</a></li>
+              <li style="font-size: 1.65rem; text-decoration: underline; display: flex; justify-content: flex-end;">
+                <a href="/lista"></a>
+            </li>
               <!-- <li><a>Mapa</a></li> -->
             </ul>
           </div>
@@ -208,14 +212,14 @@
 
 
     
-    <div class="px-4 sm:px-6 lg:px-8">
+    <div class="px-10 sm:px-6 lg:px-8 ">
         <div class="mt-8 flex flex-col">
-          <div class="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
+          <div class="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8 flex justify-center">
             <div class="inline-block py-2 align-middle md:px-6 lg:px-8">
               <div class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
 
                 <!-- TABLA -->
-                <table class=" divide-y divide-gray-300">
+                <table class=" divide-y divide-gray-300 w-[90vw]">
 
                     <!-- HEADER -->
                   <thead class="bg-gray-50">
@@ -240,7 +244,7 @@
                                 
                             {% endfor %}
                             <td>
-                               <a href="" class="perfil-link">Ver perfil</a>
+                               <a href="" class="perfil-link whitespace-nowrap">Ver perfil</a>
                             </td>
                             
                         </tr>
