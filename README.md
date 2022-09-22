@@ -4,6 +4,8 @@
 
 El sistema GAPy permite conectar a los compradores con los artesanos logrando así mayor promoción para la artesanía paraguaya. Siendo el principal público objetivo los turistas, nos encontramos con la problemática de que encontrar productos y productores de artesanía es especialmente difícil.
 
+Proyecto realizado en el hackathon del Bootcamp N° 12 de Penguin Academy (https://github.com/penguin-academy) durante Septiembre 2022.
+
 # Cómo inicializar el proyecto en Windows
 1. `pip install -r requirements.txt`
 
